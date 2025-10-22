@@ -1,58 +1,37 @@
-# ==== Sistema / OS ====
-# macOS
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
-
-# Linux
-*~ 
-.nfs*
-
-# ==== Ferramentas de VM / VirtualBox / Vagrant ====
+~
+.nfs
 *.vbox
 *.vbox-prev
 *.vagrant
-*.ova
-*.ovf
-
-# VirtualBox Host-only driver artifacts / logs
-VBox.log*
-vboxnet-*.log
-
-# ==== Capturas de rede / evidências sensíveis (PCAPs) ====
-# Evite commitar pcaps brutos. Mantenha apenas versões sanitizadas se necessário.
-*.pcap
-*.pcapng
-captures/raw/*
-evidence/captures/raw/*
-
-# ==== Logs, output e arquivos temporários ====
+.ova
+.ovf
+VBox.log
+vboxnet-.log
+.pcap
+.pcapng
+captures/raw/
+evidence/captures/raw/
 *.log
 *.tmp
 *.out
 *.err
-
-# ==== Dados sensíveis / credenciais / env ====
 .env
 *.key
-*.pem
-*.crt
-secret*
-credentials*
+.pem
+.crt
+secret
+credentials
 secrets.json
-
-# ==== Dependências / builds (se houver scripts) ====
 node_modules/
 dist/
 build/
-
-# ==== Python ====
-__pycache__/
+pycache/
 *.py[cod]
 *.pyo
 venv/
@@ -61,31 +40,15 @@ ENV/
 pip-log.txt
 *.egg-info/
 .eggs/
-
-# ==== IDE / editor configs ====
 .vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project
-
-# ==== GitHub / CI ====
 .coverage
 coverage.xml
 .cache
 pytest_cache/
-
-# ==== Arquivos grandes que você pode querer manter local apenas ====
 *.zip
 *.tar.gz
-*.7z
-
-# ==== Exceções / recomendações (não ignorar) ====
-# Se você mantiver PCAPs sanitizados para evidência, coloque-os fora dos paths ignorados,
-# por exemplo: evidence/captures/sanitized/ (garanta que esse caminho NÃO esteja listado acima).
-# Para preservar, adicione um ! para re-incluir explicitamente:
-# !evidence/captures/sanitized/
-
-# ==== Nota final ====
-# Revise as linhas relacionadas a "captures/raw" e "evidence/captures/raw" para combinar
-# com sua estrutura real de arquivos. Se preferir versionar pcaps sanitizados, reative via:
-# !evidence/captures/sanitized/*.pcap
+.7z
+!evidence/captures/sanitized/.pcap
