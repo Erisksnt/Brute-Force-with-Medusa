@@ -14,7 +14,7 @@
 - VirtualBox
 - 2 VMs: Kali Linux (atacante) e Metasploitable 2 (alvo)
 - Rede: **Host-Only** 
-- Ferramentas: `medusa`, `nmap`, `hydra` (opcional)
+- Ferramentas: `medusa`, `nmap`
 
 ## Como reproduzir (resumo)
 1. Importar / criar VMs conforme `lab-setup/`.
