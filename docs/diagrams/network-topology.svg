@@ -22,8 +22,8 @@
     <text class="txt" x="0" y="18" text-anchor="middle">192.168.56.102</text>
   </g>
 
-  <line class="link" x1="200" y1="140" x2="320" y2="44" />
-  <line class="link" x1="600" y1="140" x2="480" y2="44" />
+  <line class="link" x1="200" y1="140" x2="300" y2="90" />
+  <line class="link" x1="600" y1="140" x2="300" y2="90" />
 
   <g transform="translate(320,230)">
     <rect class="box" x="-70" y="0" width="140" height="40"/>
