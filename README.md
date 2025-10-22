@@ -31,4 +31,4 @@
 Sugestões são bem-vindas. Abra uma issue ou PR.
 
 ## Licença
-MIT © SeuNome
+MIT © EriskSantos
